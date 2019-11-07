@@ -3,11 +3,11 @@ module.exports.register.attributes = {
   name: 'hoodie'
 }
 
-var corsHeaders = require('hapi-cors-headers')
-var hoodieServer = require('@hoodie/server').register
-var _ = require('lodash')
+const corsHeaders = require('hapi-cors-headers')
+const hoodieServer = require('@hoodie/server').register
+const _ = require('lodash')
 
-var registerPlugins = require('./plugins')
+const registerPlugins = require('./plugins')
 
 function register (server, options, next) {
   options = _.cloneDeep(options)
